@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+:root {
+    --bgColor: #030617;
+    --fgColor: white;
+    --purple: #9334ea;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    transition: .1s ease-in-out;
+}
+
+body {
+    background-color: var(--bgColor);
+    color: var(--fgColor);
+}
+
+
+
+
+nav {
+    position: fixed;
+    width: 100vw;
+    background-color: var(--bgColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--fgColor) solid 1px;
+    padding: 20px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.navMid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navMid p {
+    margin-inline: 20px;
+}
+
+.navRight button {
+    background-color: var(--purple);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: var(--fgColor);
+    font-size: 15px;
+    font-weight: bold;
+    border: var(--purple) dashed;
+}
+
+.navRight button:hover {
+    cursor: pointer;
+    background-color: var(--bgColor);
+}
+
+
+
+
+
+.blogSec{
+    width: 100vw;
+    padding-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogSecCont{
+    width: 60vw;
+} 
+
+.title h1{
+    font-size: 40px;
+}
+
+.content{
+    margin-top: 40px;
+}
+
+.content h2{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.content p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.recommendationSec{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.recommendationSecCont{
+    width: 60vw;
+    background-color: var(--purple);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.recommendationSecCont h1{
+    text-align: center;
+}
+
+.grid{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.gridItem{
+    background-color: var(--bgColor);
+    color: var(--fgColor);
+    border: 5px black dashed;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.gridItem:hover {
+    cursor: pointer;
+    background-color: var(--fgColor);
+    color: var(--bgColor);
+}
+
+.gridItem p{
+    margin-top: 20px;
+    text-align: left;
+}
+
+.moreCont{
+    background-color: var(--bgColor) !important;
+}
+
+.gridBars{
+    background-color: var(--purple);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    border: dashed 5px var(--purple);
+}
+
+.gridBars:hover{
+    background-color: var(--bgColor);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin-top: 50px;
+    min-height: 10vh;
+    background-color: var(--bgColor);
+    color: var(--fgColor);
+    border-top: var(--fgColor) solid 1px;
+}
