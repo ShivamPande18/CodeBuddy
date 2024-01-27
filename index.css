@@ -115,8 +115,8 @@ nav{
 }
 
 .titleImg img{
-    height: 700px;
-    min-width: 50px;
+    max-height: 700px;
+    /* min-width: 50px; */
 }
 
 
@@ -290,6 +290,7 @@ nav{
     justify-content: center;
     align-items: center;
     color: var(--bgColor);
+    margin-bottom: 20px;
 }
 
 .lastSecCont {
@@ -351,4 +352,88 @@ footer p {
 .footerItem {
     margin-top: 30px;
     margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1300px) {
+    .featureSecCont {
+        width: 75vw;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .featureSecCont {
+        width: 93vw;
+    }
+
+    .titleImg img{
+        max-height: 500px;
+    }
+
+    .lastSecCont{
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .featureCard {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+
+    .titleImg img{
+        /* max-height: 300px; */
+        display: none;
+    }
+
+    .titleSecCont {
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .titleSecCont h1{
+        font-size: 40px;
+    }
+
+    .titleSecCont h2{
+        font-size: 40px;
+    }
+
+    .titleSecCont p {
+        font-size: 15px;
+    }
+
+    .signUpBar input{
+        font-size: 15px;
+        padding: 12px 10px;
+    }
+
+    .signUpBar button {
+        font-size: 15px;
+        padding: 12px 10px;
+    }
+
+    .lastSecCont h1{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .cardDesc h1{
+        font-size: 40px;
+        text-align: left;
+    }
+
+    .lastSecCont h1{
+        font-size: 30px;
+    }
 }
