@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+
+:root {
+    --bgColor: #121013;
+    --fgColor: white;
+    --purple: #9334ea;
+    --btnColor: #fdfe02;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    transition: .1s ease-in-out;
+}
+
+body {
+    background-color: var(--bgColor);
+    color: var(--fgColor);
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+    animation-timing-function: linear;
+    background-attachment: fixed;
+}
+
+nav {
+    position: fixed;
+    width: 100vw;
+    background-color: var(--bgColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    z-index: 200;
+}
+
+.navLeft{
+    flex: 1;
+}
+
+.navMid {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navMid input{
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: var(--btnColor) solid;
+    font-weight: bold;
+}
+
+.navMid input:focus {
+    outline: none;
+    /* border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: none; */
+}
+
+/* .navMid input:focus~.searchDrop{
+    height: 500px;
+    border: var(--btnColor) solid;
+    border-top: none;
+} */
+
+.navRight{
+    flex: 1;
+}
+
+.searchDrop{
+    display: block;
+    position: absolute;
+    top:100%;
+    width: 100%;
+    background-color: white;
+    height: 0px;
+    border: none;
+}
+
+.cardSecCont{
+    display: flex;
+    flex-direction: row;
+    /* margin-bottom: 50px; */
+}
+
+.cardNavCont{
+    padding-top: 100px;
+    width: 15vw;
+    background-color: var(--bgColor);
+    position: fixed;
+    height: 100vh;
+}
+
+.cardNavCont ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardNavCont ul li{
+    font-size: 15px;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding-block: 15px;
+    /* background-color: var(--purple); */
+}
+
+.cardNavCont ul li:hover{
+    border: none;
+    cursor: pointer;
+    background-color: #343136;
+}
+
+.activeSideNav{
+    background-color: #343136 !important;
+}
+
+.cardMainCont{
+    padding-top: 100px;
+    margin-left: 17vw;
+    margin-right: 30px;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 50px;
+    margin-bottom: 30px;
+}
+
+.cardRow{
+    padding-inline: 50px;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.cardRow::-webkit-scrollbar{
+    display: none;
+}
+
+.cardRowOuter{
+    width: 100vw;
+    position:relative;
+    margin-bottom: 100px;
+}
+
+.card{
+    background-color: black;
+    height: 350px;
+    min-width: 250px;
+    max-width: 250px;
+    border: var(--bgColor) solid;
+    border-radius: 5px;
+    color: white;
+    border-top: var(--btnColor) solid 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 15px;
+    margin-inline: 10px;
+}
+
+.card:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.781) 0px 5px 20px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card h1{
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.tagCont{
+    width: 100%;
+    margin-top: 20px;
+    /* display: flex;
+    align-items: ;
+    justify-content: space-evenly; */
+}
+
+.tagCont div{
+    display: inline-block;
+    background-color: var(--btnColor);
+    color: var(--bgColor);
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    /* margin-top: 100px; */
+}
+
+.cardDispCont{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cardDispCont:hover{
+    cursor: pointer;
+}
+
+.cardDisp{
+    position: absolute;
+    height: 80vh;
+    width: 30vw;
+    background-color: white;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: var(--bgColor) solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.cardDisp:hover{
+    cursor: default;
+}
+
+.cardDispRight{
+    width: 100%;
+    background-color: var(--bgColor);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-inline: 50px;
+    padding-block: 50px;
+    overflow-y: scroll;
+}
+
+.cardDispRight img{
+    width: 90%;
+}
+
+.cardDispHead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardDispHead h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cardDispTag{
+    margin-top: 20px;
+    margin-inline: 20px;
+}
+
+.cardDispTag div{
+    display: inline-block;
+    background-color: var(--btnColor);
+    color: var(--bgColor);
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 5px; 
+    font-size: 13px;
+}
+
+.cardDispDesc{
+    margin-top: 50px;
+}
+
+.cardDispDesc p{
+    margin-top: 20px;
+}
+
+.cardDispVote{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.cardDispVote i{
+    color: var(--fgColor);
+    font-size: 30px;
+}
+
+.cardDispVote i:hover{
+    cursor: pointer;
+    color: var(--btnColor);
+}
+
+
+.cardDispLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 20px;
+    width: 65%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: var(--fgColor);
+    color: var(--bgColor);
+}
