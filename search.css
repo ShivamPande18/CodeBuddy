@@ -191,6 +191,10 @@ nav {
     margin-bottom: 5px;
 }
 
+.cardHeader p{
+    font-size: 13px;
+}
+
 .tagCont{
     width: 100%;
     margin-top: 20px;
@@ -286,7 +290,7 @@ nav {
     margin-top: 50px;
 }
 
-.cardDispDesc p{
+.cardDispDesc p{    
     margin-top: 20px;
 }
 

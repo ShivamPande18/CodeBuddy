@@ -16,7 +16,7 @@
             "shortDesc": "A VS Code extension for visualizing data structures while debugging. Like the VS Code's watch view, but with rich visualizations of the watched value",
             "desc": "<p>A VS Code extension for visualizing data structures while debugging.Like the VS Code's watch view, but with rich visualizations of the watched value</p><p>Debugging is hard for beginners, and solving data structures, even harder.Developers, when starting out, can easily get confused with the sorting techniques or traversals</p><p>To solve this we have VSCode Debug Visualizer, a VSCode extension that visualizes data structures in the editor</p><p>It  opens a new visualizer view and lets you debug and visualize data structures on the go, making it more easy and interactive for you to understand new and complicated concepts</p>",
             "tag":"<div>vscode</div> <div>coding</div>",
-            "img": "Images/cosmos.png",
+            "img": "Images/Thumbnail/thumbnail0.jpg",
             "srcTag": "vscode code",
             "link": "https://marketplace.visualstudio.com/items?itemName=hediet.debug-visualizer"
         },
@@ -26,7 +26,7 @@
             "shortDesc": "The OSSU curriculum is a complete education in computer science using online materials",
             "desc": "<p>The OSSU curriculum is a complete education in computer science using online materials. It's not merely for career training or professional development. It's for those who want a proper, well-rounded grounding in concepts fundamental to all computing disciplines</p><p>It is designed according to the degree requirements of undergraduate computer science majors, minus general education (non-CS) requirements, as it is assumed most of the people following this curriculum are already educated outside the field of CS</p><p>The courses themselves are among the very best in the world, often coming from Harvard, Princeton, MIT, etc., but specifically chosen to meet the following criteria</p>",
             "tag": "<div>code</div> <div>webdev</div> <div>appdev</div> <div>gamedev</div>",
-            "img": "Images/cosmos.png",
+            "img": "Images/Thumbnail/thumbnail1.jpg",
             "srcTag": "code webdev appdev gamedev",
             "link": "https://github.com/ossu/computer-science"
         },
@@ -36,7 +36,7 @@
             "shortDesc": "Theodore buys an AI system to help him write. However, when he finds out about the AI's ability to learn and adapt, he falls in love with it",
             "desc": "<p>Theodore buys an AI system Samantha to help him write. However, when he finds out about the AI's ability to learn and adapt, he falls in love with it</p><p>As they start spending time together they grow closer and closer and eventually find themselves in love</p><p>Having fallen in love with his OS, Theodore finds himself dealing with feelings of both great joy and doubt. As an OS, Samantha has powerful intelligence that she uses to help Theodore in ways others hadn't</p><p>but how does she help him deal with his inner conflict of being in love with an OS?</p>",
             "tag": "<div>movie</div> <div>ai</div>",
-            "img": "Images/cosmos.png",
+            "img": "Images/Thumbnail/thumbnail2.jpg",
             "srcTag": "movie ai",
             "link": "https://www.youtube.com/watch?v=dJTU48_yghs"
         },
@@ -46,7 +46,7 @@
             "shortDesc": "Daily Dev is a browser extension that provides a customized homepage to your browser containing personalized feed to stay up-to-date with the latest dev news, has niche developer communities for you to join",
             "desc": "<p>Daily Dev is a browser extension that provides a customized homepage to your browser containing personalized feed to stay up-to-date with the latest dev news, has niche developer communities for you to join</p><p>daily.dev is a professional network for developers to learn, collaborate, and grow together</p><p>Every time you open a new tab, we'll bring you a personalized feed of tech content that’s tailored to your specific interests. No fluff, just the good stuff. 200,000+ developers use and love it every day</p>",
             "tag": "<div>chrome</div>",
-            "img": "Images/cosmos.png",
+            "img": "Images/Thumbnail/thumbnail3.jpg",
             "srcTag": "chrome",
             "link": "https://daily.dev/"
         },
@@ -56,7 +56,7 @@
             "shortDesc": "AcmX is an extension that empowers contestants to solve competitive programming problems easily",
             "desc": "<p>AcmX is an extension that empowers contestants to solve competitive programming problems easily</p><p>It parses problems from various online judges (like Code forces) and sends data like the example test cases and the time and memory constraints</p><p>The submissions are evaluated against all test cases, giving a verdict if the test case failed or not and if passed what was the time taken</p><p>It allows you to easily manage test cases and create your test cases easily</p><p>Provides stress solutions using brute solutions and generators to find edge cases</p><p>It allows you to smartly submit the solution from the editor with all the technicalities taken care of</p>",
             "tag": "<div>vscode</div> <div>code</div>",
-            "img": "Images/cosmos.png",
+            "img": "Images/Thumbnail/thumbnail4.jpg",
             "srcTag": "vscode code",
             "link": "https://marketplace.visualstudio.com/items?itemName=marx24.acmx"
         },
@@ -66,7 +66,7 @@
             "shortDesc": "Tab extends is a chrome extension that saves you your tab bar real estate by allowing you to properly manage different tabs",
             "desc": "<p>Tab extends is a chrome extension that saves you your tab bar real estate by allowing you to properly manage different tabs</p><p>It allows you to save tabs directly from the browser,Group them into different names and categories, manage and organize them properly</p><p>Add notes or todo related to any save tab</p>",
             "tag": "<div>chrome</div>",
-            "img": "Images/cosmos.png",
+            "img": "Images/Thumbnail/thumbnail5.jpg",
             "srcTag": "chrome",
             "link": "https://www.tabextend.com/?via=shivam"
         },
@@ -76,7 +76,7 @@
             "shortDesc": "Discover portfolio websites of design interns at top tech companies",
             "desc": "<p>Discover portfolio websites of design interns at top tech companies</p><p>The website provides a list of faang companies to find portfolios according to the company your want to target</p><p>It has a portfolio newsletter to Stay updated with Cofolios and learn useful tips that help students get design internships</p><p>Contains courses and case studies and has a job section for all the job listings you can apply for</p>",
             "tag": "<div>webdev</div>",
-            "img": "Images/cosmos.png",
+            "img": "Images/Thumbnail/thumbnail6.jpg",
             "srcTag": "webdev",
             "link": "https://www.cofolios.com/"
         },
@@ -316,9 +316,9 @@
             "shortDesc": "This repository is a compilation of well-written, step-by-step guides for re-creating our favorite technologies from scratch",
             "desc": "<p>This repository is a compilation of well-written, step-by-step guides for re-creating our favorite technologies from scratch</p> <p>Topics include: 3d Renderer, Bot, BitTorrent Client, OS, Search Engine, etc</p> ",
             "tag": "<div>code</div> <div>webdev</div> <div>ai</div> <div>course</div>",
-            "img": "Images/cosmos.png",
+            "img": "Images/Thumbnail/thumbnail30.jpg",
             "srcTag": "code webdev ai course",
             "link": "https://github.com/codecrafters-io/build-your-own-x"
-        },
+        }
     ]
 }
