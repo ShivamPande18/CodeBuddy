@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+
+
+:root {
+    --bgColor: #121013;
+    --fgColor: white;
+    --purple: #9334ea;
+    --btnColor: #fdfe02;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    transition: .1s ease-in-out;
+}
+
+body {
+    background-color: var(--bgColor);
+    color: var(--fgColor);
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+    animation-timing-function: linear;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav {
+    position: fixed;
+    width: 100vw;
+    background-color: var(--bgColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navMid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navMid p {
+    margin-inline: 20px;
+}
+
+.navRight button {
+    background-color: var(--btnColor);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: var(--bgColor);
+    font-size: 15px;
+    font-weight: bold;
+    border: var(--btnColor) dashed;
+}
+
+.navRight button:hover {
+    cursor: pointer;
+    background-color: var(--bgColor);
+    color: var(--btnColor);
+}
+
+
+
+
+
+
+
+
+
+
+
+.blogSec{
+    width: 100vw;
+    padding-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bgColor);
+}
+
+.blogSecCont{
+    width: 60vw;
+} 
+
+.title h1{
+    font-size: 40px;
+}
+
+.content{
+    margin-top: 40px;
+}
+
+.content h2{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.content p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.recommendationSec{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.recommendationSecCont{
+    width: 60vw;
+    background-color: var(--btnColor);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.recommendationSecCont h1{
+    text-align: center;
+}
+
+.grid{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.gridItem{
+    background-color: var(--bgColor);
+    color: var(--fgColor);
+    border: 5px black dashed;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.gridItem:hover {
+    cursor: pointer;
+    background-color: var(--fgColor);
+    color: var(--bgColor);
+}
+
+.gridItem p{
+    margin-top: 20px;
+    text-align: left;
+}
+
+.moreCont{
+    background-color: var(--bgColor) !important;
+    margin-bottom: 50px;
+}
+
+.gridBars{
+    background-color: var(--purple);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    border: dashed 5px var(--purple);
+}
+
+.gridBars:hover{
+    background-color: var(--bgColor);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    height: 20vh;
+    background-color: var(--bgColor);
+    color: var(--fgColor);
+    border-top: var(--fgColor) solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+.footerLink {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+.footerList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footerItem {
+    margin-top: 30px;
+    margin-left: 20px;
+}
