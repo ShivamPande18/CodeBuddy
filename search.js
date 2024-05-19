@@ -4,9 +4,10 @@ const intialData = urlParams.get('data');
 var scrollCont = document.getElementsByClassName("cardRow")[0];
 var sideNavLis = document.getElementsByClassName("sideNavLi");
 var cardMainCont = document.getElementsByClassName("cardMainCont")[0];
+var cardMainCardCont = document.getElementsByClassName("cardMainCardCont")[0];
 
 var sideInd = 0;
-var filterTag = "";
+var filterTags = [];
 
 var tagList = ["","ai","app","appdev","backend","business","career","chrome","code","course","game","gamedev","github","misc","ml","money","movie","project","tools","tutorial","vscode","webdev","website"];
 var emojiList = ["","👾","📱","🔧","💾","💸","🧑‍🎓","🌐","🧑🏻‍💻","🧑‍🏫","🎮","🕹️","⌨️","📟","🤖","💰","🍿","🎞️","⚙️","📹","📃","🖇️"]
@@ -20,6 +21,7 @@ var cardTitle = document.getElementById("cardTitle");
 var sideNavUl = document.getElementsByClassName("sideNavUl")[0];
 var cardDisp = document.getElementsByClassName("cardDispCont")[0];
 var cardNavCont = document.getElementsByClassName("cardNavCont")[0];
+var cardMainTagCont = document.getElementsByClassName("cardMainTagCont")[0];
 
 var signUps = document.getElementsByClassName("signUpBar");
 var signedUps = document.getElementsByClassName("signedUpBar");
@@ -409,8 +411,16 @@ function onSideNav(ind){
     sideNavLis[ind].classList.add("activeSideNav");
     sideNavLis[sideInd].classList.remove("activeSideNav");
     sideInd = ind;
-    filterTag = tagList[ind];
+    if(ind==0){
+        filterTags = [];
+    }
+    else{
+        let tempTag = tagList[ind];
+        if(!filterTags.includes(tempTag))   filterTags.push(tempTag);
+    }
+
     showCards();
+    showTags();
     if(isMobile){
         cardNavCont.style.display = "none";
         isMobile = false;
@@ -435,11 +445,13 @@ function sendLink(ind){
 }
 
 function showCards(){
-    let child = cardMainCont.lastElementChild;
+    let child = cardMainCardCont.lastElementChild;
     while (child) {
-        cardMainCont.removeChild(child);
-        child = cardMainCont.lastElementChild;
+        cardMainCardCont.removeChild(child);
+        child = cardMainCardCont.lastElementChild;
     }
+
+    // cardMainCardCont.appendChild(elementFromHtml(`<div class="multiTagCont">tags</div>`))
     for(let i=0; i<cardsData.length; i++){
         var curCard = cardsData[i];
         const tags = curCard["tags"].split(" ")
@@ -449,27 +461,55 @@ function showCards(){
         });
 
         if (curCard["title"].toLowerCase().includes(searchFilter)){
-            if(tags.indexOf(filterTag) != -1 || filterTag == ""){
-                // if(curCard["tag"]!=filterTag && filterTag!="" ) continue;
-                var cardTemp = elementFromHtml(
-                `
-                <div class="card" onclick = "sendLink(${i})">
-                    <div class="cardHeader">
-                        <p>${curCard["shortDesc"]}</p>
-                        <div class="tagCont">
-                            ${str}
-                        </div>
-                    </div>
-                    <div class="cardFooter">
-                        <img src=${curCard["img"]} alt=""srcset="">
+            var cardTempStr = `
+            <div class="card" onclick = "sendLink(${i})">
+                <div class="cardHeader">
+                    <p>${curCard["shortDesc"]}</p>
+                    <div class="tagCont">
+                        ${str}
                     </div>
                 </div>
-                `
-                );
-                cardMainCont.appendChild(cardTemp);
+                <div class="cardFooter">
+                    <img src=${curCard["img"]} alt=""srcset="">
+                </div>
+            </div>
+            `;
+            var cardTemp; 
+
+            if(filterTags.length == 0){
+                cardTemp = elementFromHtml(cardTempStr);
+                cardMainCardCont.appendChild(cardTemp);
+            }
+            else{
+                for(let j=0;j<filterTags.length;j++){
+                    var curTag = filterTags[j];
+                    if(tags.indexOf(curTag) != -1 || curTag == ""){
+                        cardTemp = elementFromHtml(cardTempStr);
+                        cardMainCardCont.appendChild(cardTemp);
+                        break;
+                    }
+                }
             }
         }
     }
+}
+
+function showTags(){
+    const len = filterTags.length;
+    cardMainTagCont.innerHTML = "";
+    if(len==0)  return;
+
+    let tagTemp;
+    for (let i = 0; i < filterTags.length; i++) {
+        tagTemp = elementFromHtml(`<span class="multiTag" onclick = "removeTag(${i})">${filterTags[i]}   <i class="fa fa-times "></i> </span>`);
+        cardMainTagCont.appendChild(tagTemp);
+    }
+}
+
+function removeTag(index){
+    filterTags.splice(index,1);
+    showTags();
+    showCards();
 }
 
 function onSearch(e){

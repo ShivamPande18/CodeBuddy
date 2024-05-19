@@ -155,15 +155,47 @@ nav {
 }
 
 .cardMainCont{
-    padding-top: 100px;
+    padding-top: 90px;
     margin-left: 17vw;
     margin-right: 30px;
     width: 80vw;
+    margin-bottom: 30px;
+}
+
+.cardMainTagCont{
+    padding-block: 10px;
+    width: 100%;
+    white-space: nowrap;    
+    /* float: left; */
+    overflow-x: scroll;
+    /* margin-top: 80px; */
+}
+
+.multiTag{
+    display: inline-block;
+    color: var(--bgColor);
+    background-color: var(--btnColor);
+    margin-right: 20px;
+    padding-inline: 5px;
+    padding-block: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: var(--bgColor) solid;
+    font-size: 13px;
+}
+
+.multiTag:hover{
+    cursor: pointer;
+    border: var(--bgColor) dashed;
+}
+
+.cardMainCardCont{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     row-gap: 50px;
-    margin-bottom: 30px;
+    margin-top: 30px;
 }
+
 
 .cardRow{
     padding-inline: 50px;
@@ -224,9 +256,6 @@ nav {
 .tagCont{
     width: 100%;
     margin-top: 20px;
-    /* display: flex;
-    align-items: ;
-    justify-content: space-evenly; */
 }
 
 .tagCont div{
@@ -457,6 +486,10 @@ nav {
     .cardNavCont{
         width: 15vw;
     }
+    
+    .cardMainCardCont{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 
     .cardMainCont{
         width: 70vw;
@@ -470,9 +503,11 @@ nav {
 
     .cardMainCont{
         width: 70vw;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
         margin-right: 0px;
         margin-left: 20vw;
+    }
+    .cardMainCardCont{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
@@ -481,9 +516,12 @@ nav {
 
     .cardMainCont{
         width: 70vw;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
         margin-right: 0px;
         margin-left: 16vw;
+    }
+
+    .cardMainCardCont{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
@@ -506,9 +544,12 @@ nav {
     }
     .cardMainCont{
         width: 70vw;
-        grid-template-columns: 1fr 1fr 1fr;
         margin-right: 0px;
         margin-left: 25vw;
+    }
+
+    .cardMainCardCont{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -523,9 +564,12 @@ nav {
     }
     .cardMainCont{
         width: 70vw;
-        grid-template-columns: 1fr 1fr 1fr;
         margin-right: 0px;
         margin-left: 18vw;
+    }
+
+    .cardMainCardCont{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 @media only screen and (min-width: 1000px) {
@@ -595,6 +639,9 @@ nav {
     .cardMainCont{
         margin-left: 10vw;
         margin-right: 10vw;
+    }
+
+    .cardMainCardCont{
         grid-template-columns: 1fr 1fr;
     }
 }
