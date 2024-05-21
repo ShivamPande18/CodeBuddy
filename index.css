@@ -185,6 +185,12 @@ nav{
     font-size: 20px;
 }
 
+.signedUpBar:hover{
+    cursor: pointer;
+    border: dashed;
+}
+
+
 .signUpError{
     margin-top: 3px !important;
     margin-left: 10px;

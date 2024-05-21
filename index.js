@@ -53,3 +53,7 @@ async function OnSignUp(ind,e){
         // signUpError[ind].style
     }
 }
+
+function onReview(){
+    open("https://forms.gle/Hh5RgPBtBpgnA2iu9");
+}

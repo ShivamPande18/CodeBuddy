@@ -1,5 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const intialData = urlParams.get('data');
+const ROOT = "https://shivampande18.github.io/CodeBuddy/";
 
 var scrollCont = document.getElementsByClassName("cardRow")[0];
 var sideNavLis = document.getElementsByClassName("sideNavLi");
@@ -54,6 +55,11 @@ async function OnSignUp(ind,e){
         signUpError[ind].innerHTML = "*Enter a valid email";
         // signUpError[ind].style
     }
+}
+
+function copyLink(){
+    navigator.clipboard.writeText(`${ROOT}search.html?data=${dataInd}`)
+    alert("Link copied");
 }
 
 
@@ -381,6 +387,10 @@ showCards();
 
 function goToLink(){
     open(cardsData[dataInd]["link"]);
+}
+
+function onReview(){
+    open("https://forms.gle/Hh5RgPBtBpgnA2iu9");
 }
 
 function showCardDisp(ind){
