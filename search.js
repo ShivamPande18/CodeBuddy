@@ -330,7 +330,7 @@ var cardsJson = JSON.parse(`{
             "id": "29",
             "title": "LEARNING LAB",
             "shortDesc": "Learn anything in one month alongside your day job",
-            "desc": "<p>Learn anything in one month alongside your day job</p> <p>Check out our curated list of topics with their learning resources and experiences to learn anything within 2 months</p> <p></p> <p></p> <p></p> <p></p>",
+            "desc": "<p>Learn anything in one month alongside your day job</p> <p>Check out our curated list of topics with their learning resources and experiences to learn anything within 2 months</p> ",
             "img": "Images/Thumbnail/thumbnail29.jpg",
             "tags": "course",
             "link": "https://learn.uno/"
@@ -343,9 +343,19 @@ var cardsJson = JSON.parse(`{
             "img": "Images/Thumbnail/thumbnail30.jpg",
             "tags": "code webdev ai course",
             "link": "https://github.com/codecrafters-io/build-your-own-x"
+        },
+        {
+            "id": "31",
+            "title": "MICROSOFT'S GENERATIVE AI COURSE",
+            "shortDesc": "Learn the fundamentals of building Generative AI applications with our 18-lesson comprehensive course by Microsoft Cloud Advocates",
+            "desc": "<p>Learn the fundamentals of building Generative AI applications with our 18-lesson comprehensive course by Microsoft Cloud Advocates</p> <p>Each lesson includes: A short video introduction, A written lesson, Python and TypeScript code samples supporting Azure OpenAI and OpenAI API and Links to  resources</p> <p>Lessons are labeled either 'Learn' lessons explaining a Generative AI concept or 'Build' lessons that explain a concept and code examples in both Python and TypeScript when possible</p> ",
+            "img": "Images/Thumbnail/thumbnail31.jpg",
+            "tags": "code ai course ml",
+            "link": "https://github.com/microsoft/generative-ai-for-beginners"
         }
     ]
 }`)
+
 var cardsData = cardsJson["cards"];
 var dataInd = parseInt(intialData);
 
