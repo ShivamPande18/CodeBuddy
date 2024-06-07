@@ -350,8 +350,107 @@ var cardsJson = JSON.parse(`{
             "shortDesc": "Learn the fundamentals of building Generative AI applications with our 18-lesson comprehensive course by Microsoft Cloud Advocates",
             "desc": "<p>Learn the fundamentals of building Generative AI applications with our 18-lesson comprehensive course by Microsoft Cloud Advocates</p> <p>Each lesson includes: A short video introduction, A written lesson, Python and TypeScript code samples supporting Azure OpenAI and OpenAI API and Links to  resources</p> <p>Lessons are labeled either 'Learn' lessons explaining a Generative AI concept or 'Build' lessons that explain a concept and code examples in both Python and TypeScript when possible</p> ",
             "img": "Images/Thumbnail/thumbnail31.jpg",
-            "tags": "code ai course ml",
-            "link": "https://github.com/microsoft/generative-ai-for-beginners"
+            "tags": "code ai course ml github",
+            "link": "https://GITHUB.com/microsoft/generative-ai-for-beginners"
+        },
+        {
+            "id": "32",
+            "title": "FREE PROGRAMING BOOKS",
+            "shortDesc": "List of Free Learning Resources In Many Languages",
+            "desc": "<p>List of Free Learning Resources In Many Languages</p> <p>This GitHub repository contains a curated list of free programming books that you can use to study</p> <p>You can find books covering concepts of different languages for example python, c, c++, c#</p> <p>You can find books covering technologies like Django, flask, drupal, angular, etc</p>",
+            "img": "Images/Thumbnail/thumbnail32.jpg",
+            "tags": "code course github",
+            "link": "https://github.com/EbookFoundation/free-programming-books"
+        },
+        {
+            "id": "33",
+            "title": "THE ODIN PROJECT",
+            "shortDesc": "Provides you with a full curriculum, roadmap and projects for you to become a full stack developer",
+            "desc": "<p>Provides you with a full curriculum, roadmap and projects for you to become a full stack developer</p> <p>It unique feature is learning by  doing as it provides various projects in between of the curriculum</p> <p>It has a volunteer-driven Discord community, that will help with anything in the curriculum</p> <p>Being open source this is one of the best developer community that you can join</p>",
+            "img": "Images/Thumbnail/thumbnail33.jpg",
+            "tags": "code course tutorial webdev website project",
+            "link": "https://www.theodinproject.com/"
+        },
+        {
+            "id": "34",
+            "title": "GIT CHEAT SHEETS",
+            "shortDesc": "Cheat Sheet for the Git Distributed Version Control System by Sam Collett",
+            "desc": "<p>Provides you with a Cheat Sheet for the Git Distributed Version Control System</p> <p>You can download it as a PDF and refer to it whenever you are working with Git.</p> <p>All the commands are concentrated on one page, it's easy to use, makes your version control more efficient, and saves you money as it is free</p>",
+            "img": "Images/Thumbnail/thumbnail34.jpg",
+            "tags": "github misc",
+            "link": "https://cheatography.com/samcollett/cheat-sheets/git/"
+        },
+        {
+            "id": "35",
+            "title": "W3SCHOOL",
+            "shortDesc": "Learn to Code with the world's largest web developer site",
+            "desc": "<p>Learn to Code with the world's largest web developer site</p> <p>W3school creates simplified and interactive learning experiences.</p> <p>W3Schools is a school for web developers, covering all the aspects of web development</p> <p>w3school covers fronted, backend, designing best practices, references, templates, code snippets how to, to create any component of any website that you want to create</p> <p>It has a built in editor for you to work on</p> <p>You can get certified to</p>",
+            "img": "Images/Thumbnail/thumbnail35.jpg",
+            "tags": "backend course code webdev website",
+            "link": "https://www.w3schools.com"
+        },
+        {
+            "id": "36",
+            "title": "CODING INTERVIEW UNIVERSITY",
+            "shortDesc": "This is my multi-month study plan for becoming a software engineer for a large company",
+            "desc": "<p>This is my multi-month study plan for becoming a software engineer for a large company</p> <p>You get all the resources you need to crack any coding interview</p> <p>It includes data structures and algorithm tutorials, programming book recommendation, study plans, coding questions to practice, resume building advice, guidance for finding interviews and giving interviews and much more</p>",
+            "img": "Images/Thumbnail/thumbnail36.jpg",
+            "tags": "code career course github",
+            "link": "https://github.com/jwasham/coding-interview-university"
+        },
+        {
+            "id": "37",
+            "title": "NOCODE.TECH",
+            "shortDesc": "Develop products, without learning to code",
+            "desc": "<p>Develop products, without learning to code</p> <p>NoCode.Tech is a media platform aiming to help anyone, no matter their technical skills, navigate the digital world and build their own software using no-code tools</p> <p>It contains different articles, tools, guids, explanations and tutorials regarding different nocode developer tools out there</p> <p>Wheather you wanna create a product for your startup, Automate your business or benefit your enterprice nocode.tech has its all</p>",
+            "img": "Images/Thumbnail/thumbnail37.jpg",
+            "tags": "code app website business",
+            "link": "https://www.nocode.tech/"
+        },
+        {
+            "id": "38",
+            "title": "FREE FOR DEV",
+            "shortDesc": "This is a list of software (SaaS, PaaS, IaaS, etc.) and other offerings with free developer tiers",
+            "desc": "<p>This is a list of software (SaaS, PaaS, IaaS, etc.) and other offerings with free developer tiers</p> <p>Developers and Open Source authors now have many services offering free tiers, but finding them all takes time to make informed decisions</p> <p>The scope of this particular list is limited to things that infrastructure developers (System Administrator, DevOps Practitioners, etc.) are likely to find useful</p> <p>This list results from Pull Requests, reviews, ideas, and work done by 1100+ people</p>",
+            "img": "Images/Thumbnail/thumbnail38.jpg",
+            "tags": "tools misc",
+            "link": "https://free-for.dev/#/"
+        },
+        {
+            "id": "39",
+            "title": "EDABIT",
+            "shortDesc": "Edabit is the duolingo of coding",
+            "desc": "<p>Edabit is the duolingo of coding </p> <p>Edabit provides you with 10000+ interactive challenges. It offers an almost limitless supply of bite-sized exercises, so you can rapidly advance your abilities</p> <p>Bridges gaps between different level of coders  you start on easy and progress at your own pace until you're able to master the toughest coding exercises</p> <p>Its simple game mechanics to make the learning process fun and addictive. Gain XP, unlock achievements and level up</p> <p>It features languages like c#, c++, java, javascript, php, pyhton, ruby and swift</p>",
+            "img": "Images/Thumbnail/thumbnail39.jpg",
+            "tags": "course tutorial code",
+            "link": "https://edabit.com/"
+        },
+        {
+            "id": "40",
+            "title": "REACT TUTORIAL",
+            "shortDesc": "The easiest and the most interactive way to learn React",
+            "desc": "<p>The easiest and the most interactive way to learn React</p> <p>React tutorial helps you to Learn modern React from scratch, by using an intuitive environment</p> <p>You will read short lessons, solve challenges and projects while learning the best practices, one step at a time</p> <p>To better prepare you for the real world, React tutorials has 27 projects that will help you build an online supermarket shopping app with Stripe integration</p> <p>The platform has various similar cources like learn typescript, learn javascript,etc</p>",
+            "img": "Images/Thumbnail/thumbnail40.jpg",
+            "tags": "course tutorial code webdev",
+            "link": "https://react-tutorial.app/"
+        },
+        {
+            "id": "41",
+            "title": "ARTBOT",
+            "shortDesc": "The easiest and the most interactive way to learn React",
+            "desc": "<p>The easiest and the most interactive way to learn React</p> <p>React tutorial helps you to Learn modern React from scratch, by using an intuitive environment</p> <p>You will read short lessons, solve challenges and projects while learning the best practices, one step at a time</p> <p>To better prepare you for the real world, React tutorials has 27 projects that will help you build an online supermarket shopping app with Stripe integration</p> <p>The platform has various similar cources like learn typescript, learn javascript,etc</p>",
+            "img": "Images/Thumbnail/thumbnail41.jpg",
+            "tags": "game ml tutorial course",
+            "link": "https://art-bot.net/"
+        },
+        {
+            "id": "42",
+            "title": "LEARN GIT BRANCHING",
+            "shortDesc": "The most visual and interactive way to learn Git on the web",
+            "desc": "<p>The most visual and interactive way to learn Git on the web</p> <p>You'll be challenged with exciting levels, given step-by-step demonstrations of powerful features, and maybe even have a bit of fun along the way</p> <p>This gamified platform has variety of levels to offer ranging from beginners to advanced levels</p> <p>The interface feels like working in a terminal itself making you code and learn at the same time</p>",
+            "img": "Images/Thumbnail/thumbnail42.jpg",
+            "tags": "course tutorial github game",
+            "link": "https://learngitbranching.js.org/"
         }
     ]
 }`)
