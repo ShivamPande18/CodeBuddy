@@ -58,7 +58,7 @@ async function OnSignUp(ind,e){
 }
 
 function copyLink(){
-    navigator.clipboard.writeText(`${ROOT}search.html?data=${dataInd}`)
+    navigator.clipboard.writeText(`Hey, try ${cardsJson["cards"][dataInd]["title"]} in CodeBuddy\n${ROOT}search.html?data=${dataInd}`)
     alert("Link copied");
 }
 
@@ -85,12 +85,12 @@ var cardsJson = JSON.parse(`{
         },
         {
             "id": "2",
-            "title": "HER",
-            "shortDesc": "Theodore buys an AI system to help him write. However, when he finds out about the AI's ability to learn and adapt, he falls in love with it",
-            "desc": "<p>Theodore buys an AI system Samantha to help him write. However, when he finds out about the AI's ability to learn and adapt, he falls in love with it</p><p>As they start spending time together they grow closer and closer and eventually find themselves in love</p><p>Having fallen in love with his OS, Theodore finds himself dealing with feelings of both great joy and doubt. As an OS, Samantha has powerful intelligence that she uses to help Theodore in ways others hadn't</p><p>but how does she help him deal with his inner conflict of being in love with an OS?</p>",
+            "title": "MINDWARS",
+            "shortDesc": "An approach to gamify education",
+            "desc": "<p>An approach to gamify education</p> <p>Small interactive game, made with the aim to Gamify Education and make it easy for educators and subject experts to apply in a wide range of environments from classrooms to competitions</p> <p>Has an online hosted leaderboard functionality as well.</p> <p>Provides the functionality to change the questions and answers through a simple and easy to edit JSON file hosted on GitHub as well.</p>",
             "img": "Images/Thumbnail/thumbnail2.jpg",
-            "tags": "movie ai",
-            "link": "https://www.youtube.com/watch?v=dJTU48_yghs"
+            "tags": "course tutorial game",
+            "link": "https://lavitrasrivastava.github.io/Mindwars-website/"
         },
         {
             "id": "3",
@@ -451,7 +451,17 @@ var cardsJson = JSON.parse(`{
             "img": "Images/Thumbnail/thumbnail42.jpg",
             "tags": "course tutorial github game",
             "link": "https://learngitbranching.js.org/"
+        },
+        {
+            "id": "43",
+            "title": "HER",
+            "shortDesc": "Theodore buys an AI system to help him write. However, when he finds out about the AI's ability to learn and adapt, he falls in love with it",
+            "desc": "<p>Theodore buys an AI system Samantha to help him write. However, when he finds out about the AI's ability to learn and adapt, he falls in love with it</p><p>As they start spending time together they grow closer and closer and eventually find themselves in love</p><p>Having fallen in love with his OS, Theodore finds himself dealing with feelings of both great joy and doubt. As an OS, Samantha has powerful intelligence that she uses to help Theodore in ways others hadn't</p><p>but how does she help him deal with his inner conflict of being in love with an OS?</p>",
+            "img": "Images/Thumbnail/thumbnail43.jpg",
+            "tags": "movie ai",
+            "link": "https://www.youtube.com/watch?v=dJTU48_yghs"
         }
+
     ]
 }`)
 
