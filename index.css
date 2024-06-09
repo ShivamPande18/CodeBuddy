@@ -191,17 +191,17 @@ nav{
 }
 
 
-.signUpError{
-    margin-top: 3px !important;
-    margin-left: 10px;
-    font-size: 15px !important;
-    color: red;
-}
+    .signUpError{
+        margin-top: 3px !important;
+        margin-left: 10px;
+        font-size: 15px !important;
+        color: red;
+    }
 
-.signUpError2{
-    align-items: start !important;
-    text-align: left !important;
-}
+    .signUpError2{
+        align-items: start !important;
+        text-align: left !important;
+    }
 
 
 
@@ -283,6 +283,12 @@ nav{
     background-color: var(--bgColor);
     color: white;
 }
+
+
+
+
+
+
 
 
 .lastSec{

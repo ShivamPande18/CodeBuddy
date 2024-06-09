@@ -62,6 +62,7 @@ function copyLink(){
     alert("Link copied");
 }
 
+//gs://codebuddy-4f58c.appspot.com/thumbnails/
 
 var cardsJson = JSON.parse(`{
     "cards":[
@@ -460,6 +461,15 @@ var cardsJson = JSON.parse(`{
             "img": "Images/Thumbnail/thumbnail43.jpg",
             "tags": "movie ai",
             "link": "https://www.youtube.com/watch?v=dJTU48_yghs"
+        },
+        {
+            "id": "44",
+            "title": "Project Ideas And Resources",
+            "shortDesc": "A detailed list of Project Ideas and Resources",
+            "desc": "<p>A detailed list of Project Ideas and Resources</p> <p>The list of project ideas is divided into three categories biggener projects, intermediate projecs and advanced projects</p> <p>Each project has the following features: A clear and descriptive objective, A list of User Stories, A list of bonus features, All the resources and links to help you find what you need to complete the project.</p>",
+            "img": "Images/Thumbnail/thumbnail44.jpg",
+            "tags": "code project",
+            "link": "https://github.com/The-Cool-Coders/Project-Ideas-And-Resources"
         }
 
     ]
