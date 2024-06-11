@@ -1,3 +1,4 @@
+
 const urlParams = new URLSearchParams(window.location.search);
 const intialData = urlParams.get('data');
 const ROOT = "https://codesbuddy.netlify.app/";

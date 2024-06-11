@@ -340,7 +340,8 @@ nav {
 .signUpBar {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
 }
 
 .signUpBar input {
@@ -361,16 +362,17 @@ nav {
 .signUpBar button{
     background-color: var(--btnColor);
     color: var(--bgColor);
-    border-left: none;
-    border-top: solid var(--bgColor);
-    border-bottom: solid var(--bgColor);
-    border-right: solid var(--bgColor);
-    /* border: var(--btnColor) dashed; */
+    border: solid var(--bgColor);
     padding: 12px 30px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     font-size: 15px;
     margin-top: 50px;
+}
+
+.signUpBar button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
 }
 
 .signedUpBar{
