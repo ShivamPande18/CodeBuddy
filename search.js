@@ -1,18 +1,17 @@
-
-const urlParams = new URLSearchParams(window.location.search);
 const intialData = urlParams.get('data');
 const ROOT = "https://codesbuddy.netlify.app/";
+const urlParams = new URLSearchParams(window.location.search);
 
-var scrollCont = document.getElementsByClassName("cardRow")[0];
 var sideNavLis = document.getElementsByClassName("sideNavLi");
+var scrollCont = document.getElementsByClassName("cardRow")[0];
 var cardMainCont = document.getElementsByClassName("cardMainCont")[0];
 var cardMainCardCont = document.getElementsByClassName("cardMainCardCont")[0];
 
 var sideInd = 0;
 var filterTags = [];
 
+var emojiList = ["","👾","📱","🔧","💾","💸","🧑‍🎓","🌐","🧑🏻‍💻","🧑‍🏫","🎮","🕹️","⌨️","📟","🤖","💰","🍿","🎞️","⚙️","📹","📃","🖇️"];
 var tagList = ["","ai","app","appdev","backend","business","career","chrome","code","course","game","gamedev","github","misc","ml","money","movie","project","tools","tutorial","vscode","webdev","website"];
-var emojiList = ["","👾","📱","🔧","💾","💸","🧑‍🎓","🌐","🧑🏻‍💻","🧑‍🏫","🎮","🕹️","⌨️","📟","🤖","💰","🍿","🎞️","⚙️","📹","📃","🖇️"]
 
 var isMobile = false;
 
@@ -25,11 +24,11 @@ var cardDisp = document.getElementsByClassName("cardDispCont")[0];
 var cardNavCont = document.getElementsByClassName("cardNavCont")[0];
 var cardMainTagCont = document.getElementsByClassName("cardMainTagCont")[0];
 
+var subBtns = document.getElementsByClassName("subBtn");
 var signUps = document.getElementsByClassName("signUpBar");
 var signedUps = document.getElementsByClassName("signedUpBar");
-var signUpInputs = document.getElementsByClassName("signUpInput");
 var signUpError = document.getElementsByClassName("signUpError");
-var subBtns = document.getElementsByClassName("subBtn");
+var signUpInputs = document.getElementsByClassName("signUpInput");
 
 signedUps[0].style.display = "none";    
 
@@ -48,13 +47,10 @@ async function OnSignUp(ind,e){
 
         signUpError[ind].innerHTML = "";
 
-        const docRef = await addDoc(collection(db, "emails"), {
-            email: email
-        });
+        const docRef = await addDoc(collection(db, "emails"), {email: email});
     }
     else{
         signUpError[ind].innerHTML = "*Enter a valid email";
-        // signUpError[ind].style
     }
 }
 
@@ -465,12 +461,30 @@ var cardsJson = JSON.parse(`{
         },
         {
             "id": "44",
-            "title": "Project Ideas And Resources",
+            "title": "PROJECT IDEAS AND RESOURCES",
             "shortDesc": "A detailed list of Project Ideas and Resources",
             "desc": "<p>A detailed list of Project Ideas and Resources</p> <p>The list of project ideas is divided into three categories biggener projects, intermediate projecs and advanced projects</p> <p>Each project has the following features: A clear and descriptive objective, A list of User Stories, A list of bonus features, All the resources and links to help you find what you need to complete the project.</p>",
             "img": "Images/Thumbnail/thumbnail44.jpg",
             "tags": "code project",
             "link": "https://github.com/The-Cool-Coders/Project-Ideas-And-Resources"
+        },
+        {
+            "id": "45",
+            "title": "1000 PROJECT IDEAS",
+            "shortDesc": "This github repository will never let run out of ideas",
+            "desc": "<p>This github repository will never let run out of ideas</p> <p>It contains not 10 not 100 not 500 but 1000 project ideas</p> <p>This mega list is opensource, contains ideas for all tyPes and levels of projects</p>",
+            "img": "Images/Thumbnail/thumbnail45.jpg",
+            "tags": "code project",
+            "link": "https://github.com/vicky002/1000_Projects"
+        },
+        {
+            "id": "46",
+            "title": "CODEDEX",
+            "shortDesc": "Codédex is a brand new way to learn to code online",
+            "desc": "<p>Codédex is a brand new way to learn to code online</p> <p>Journey through the fantasy land of Python, HTML, CSS, JavaScript, React, Command Line, or Git & GitHub</p> <p>Level up your coding chops alongside fellow learners in the community. Participate in monthly challenges and get live help from code mentors</p> <p>Apply your newly learned skills to create interactive websites, mini-games, mobile apps, visualizations, and more. The future is at your fingertips</p>",
+            "img": "Images/Thumbnail/thumbnail46.jpg",
+            "tags": "code project game tutorial",
+            "link": "https://www.codedex.io"
         }
 
     ]
