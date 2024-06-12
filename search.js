@@ -1,6 +1,6 @@
+const urlParams = new URLSearchParams(window.location.search);
 const intialData = urlParams.get('data');
 const ROOT = "https://codesbuddy.netlify.app/";
-const urlParams = new URLSearchParams(window.location.search);
 
 var sideNavLis = document.getElementsByClassName("sideNavLi");
 var scrollCont = document.getElementsByClassName("cardRow")[0];
